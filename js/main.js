@@ -574,8 +574,13 @@
      --------------------------------------------------------- */
   const mm = gsap.matchMedia();
 
-  // ---- Desktop: horizontal projects + pinned process
-  mm.add('(min-width: 901px)', () => {
+  // ---- Desktop + phone: horizontal projects + pinned process
+  mm.add({ wide: '(min-width: 901px)', phone: '(max-width: 900px) and (min-height: 500px)' }, (ctx) => {
+    const { phone } = ctx.conditions;
+    const drift = phone ? 0.3 : 1; // menos deslocamento vertical em telas pequenas
+    // a classe aplica o layout do celular antes de o ScrollTrigger medir a página
+    html.classList.toggle('pin-m', phone);
+
     const track = $('.projects__track');
     const bar = $('.projects__bar i');
     const current = $('.projects__current');
@@ -616,8 +621,8 @@
         xPercent: 7, ease: 'none',
         scrollTrigger: { trigger: c, containerAnimation: hTween, start: 'left right', end: 'right left', scrub: true },
       });
-      gsap.fromTo(c, { y: i % 2 ? 50 : -20 }, {
-        y: i % 2 ? -30 : 30, ease: 'none',
+      gsap.fromTo(c, { y: (i % 2 ? 50 : -20) * drift }, {
+        y: (i % 2 ? -30 : 30) * drift, ease: 'none',
         scrollTrigger: { trigger: c, containerAnimation: hTween, start: 'left right', end: 'right left', scrub: true },
       });
     });
@@ -676,12 +681,13 @@
     });
 
     return () => {
+      html.classList.remove('pin-m');
       steps.forEach((s, i) => s.classList.toggle('is-active', i === 0));
     };
   });
 
-  // ---- Tablet / mobile
-  mm.add('(max-width: 900px)', () => {
+  // ---- Telas baixas (celular deitado): layout empilhado, sem pin
+  mm.add('(max-width: 900px) and (max-height: 499px)', () => {
     cards.forEach((c) => {
       const media = $('.proj__media', c);
       gsap.timeline({ scrollTrigger: { trigger: c, start: 'top 85%' } })
