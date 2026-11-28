@@ -359,6 +359,11 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
   font-size: 11px; letter-spacing: .16em; text-transform: uppercase; opacity: .7;
 }
 
+.hero__tag {
+  position: absolute; right: var(--gut); top: calc(var(--header-h) + 12px); z-index: 2;
+  font-size: 10px; letter-spacing: .14em; text-transform: uppercase; opacity: .65;
+}
+
 /* =========================================================
    ABOUT
    ========================================================= */
@@ -385,7 +390,8 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
 .about__copy .link-arrow .sq { width: 7px; height: 7px; }
 .about__fig--small { grid-column: 9 / 13; grid-row: 2; aspect-ratio: 4 / 3; align-self: end; }
 .about__fig--small figcaption {
-  position: absolute; left: 12px; bottom: 12px; color: var(--c-off); font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  position: absolute; left: 12px; bottom: 12px; font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--c-black); background: rgba(243, 241, 235, .9); padding: 5px 9px; line-height: 1.2;
 }
 
 .reveal-img, .proj__media, .process__media figure, .contact__bg { position: relative; overflow: hidden; background: var(--c-graphite); }
@@ -555,6 +561,10 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
 .process__media { grid-column: 9 / 13; grid-row: 2; align-self: center; position: relative; aspect-ratio: 4 / 5; max-height: 58vh; width: 100%; }
 .process__media figure { position: absolute; inset: 0; }
 .process__media img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(.25); }
+.process__media figcaption {
+  position: absolute; left: 12px; top: 12px; font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--c-black); background: rgba(243, 241, 235, .9); padding: 5px 9px; line-height: 1.2;
+}
 .process__progress { grid-column: 1 / 13; grid-row: 3; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 .process__progress span { height: 2px; background: var(--line-dark); position: relative; overflow: hidden; }
 .process__progress span::after { content: ""; position: absolute; inset: 0; background: var(--c-off); transform: scaleX(var(--p, 0)); transform-origin: left; }
@@ -705,6 +715,9 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
 .pov__meta dt { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; opacity: .5; margin-bottom: 4px; }
 .pov__meta dd { font-size: 15px; }
 .pov__nav { display: flex; justify-content: space-between; margin-top: 40px; }
+
+/* no desktop a foto ocupa só a área visível ao lado do painel (há fotos verticais) */
+@media (min-width: 901px) { .pov__media img { width: calc(100% - min(560px, 42vw)); } }
 
 /* Floating WhatsApp */
 .wa-float {

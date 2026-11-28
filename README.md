@@ -6,6 +6,7 @@ Site estático (HTML + CSS + JS). Basta abrir `index.html` no navegador ou publi
 - `index.html` — conteúdo e SEO (meta tags, JSON-LD)
 - `css/style.css` — tokens de cor/tipografia, layout e responsivo
 - `js/main.js` — interações (preloader, menu, cursor, scroll, projetos, processo)
+- `assets/img/` — fotos do álbum da EVO (WebP, cores harmonizadas, sem metadados). Os arquivos com `simulacao` no nome são simulações de projeto e aparecem identificados na página
 - `assets/evo-logo-original.png` — logo fornecida (favicon / og:image). A logo do site é um SVG desenhado a partir dela.
 
 Bibliotecas via CDN: GSAP 3.12.5 + ScrollTrigger (cdnjs) e Lenis 1.1.13 (jsDelivr).
@@ -19,5 +20,5 @@ Sem essas bibliotecas, ou com "reduzir movimento" ativo no sistema, o site cai n
 | E-mail `contato@evoreformas.com.br` | `index.html` |
 | Links do Instagram / LinkedIn | `index.html` (menu e rodapé) |
 | Horário de atendimento | `index.html` |
-| Imagens (Unsplash, ilustrativas) | `index.html` — trocar pelas fotos reais da EVO |
-| Projetos conceituais | `index.html`, seção `#projetos` — trocar pelos projetos reais e remover o aviso "conceitual" |
+| Foto de “Reformas comerciais” (Unsplash, ilustrativa) | `index.html`, seção `#servicos` — trocar por foto real da EVO |
+| Títulos e descrições dos projetos (escritos a partir das fotos) | `index.html`, seção `#projetos` — conferir e ajustar |

@@ -220,6 +220,8 @@
     $('.pov__title').textContent = c.dataset.title;
     $('.pov__cat').textContent = `${String(i + 1).padStart(2, '0')} — ${c.dataset.cat}`;
     $('.pov__desc').textContent = c.dataset.desc;
+    $('.pov__status').textContent = c.dataset.status;
+    $('.pov__source').textContent = c.dataset.source;
   }
   const rectInset = (r, box) =>
     `inset(${r.top - box.top}px ${box.right - r.right}px ${box.bottom - r.bottom}px ${r.left - box.left}px)`;

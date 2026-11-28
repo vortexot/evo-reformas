@@ -14,9 +14,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80">
+  <link rel="preload" as="image" href="assets/img/casa-simulacao-noite.webp" imagesrcset="assets/img/casa-simulacao-noite-900.webp 900w, assets/img/casa-simulacao-noite.webp 1448w" imagesizes="100vw">
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -114,11 +113,11 @@
     <div class="menu__inner">
       <div class="menu__preview" aria-hidden="true">
         <div class="menu__preview-frame">
-          <img data-key="sobre" src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1100&q=75" alt="" loading="lazy">
-          <img data-key="servicos" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1100&q=75" alt="" loading="lazy">
-          <img data-key="projetos" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1100&q=75" alt="" loading="lazy">
-          <img data-key="processo" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1100&q=75" alt="" loading="lazy">
-          <img data-key="contato" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=75" alt="" loading="lazy">
+          <img data-key="sobre" src="assets/img/apartamento-iluminacao.webp" alt="" loading="lazy">
+          <img data-key="servicos" src="assets/img/execucao-pintura.webp" alt="" loading="lazy">
+          <img data-key="projetos" src="assets/img/casa-fachada-obra.webp" alt="" loading="lazy">
+          <img data-key="processo" src="assets/img/piso-instalacao.webp" alt="" loading="lazy">
+          <img data-key="contato" src="assets/img/cozinha-planejada.webp" alt="" loading="lazy">
         </div>
         <p class="menu__preview-caption"><span>EVO</span> — Arquitetura · Reformas · Construção</p>
       </div>
@@ -157,11 +156,9 @@
     <!-- ========== 01 HERO ========== -->
     <section class="hero" id="top" data-header="dark">
       <div class="hero__media">
-        <img class="hero__img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80"
-             srcset="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=75 900w,
-                     https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=78 1400w,
-                     https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80 2000w"
-             sizes="100vw" alt="Residência contemporânea ao entardecer, com volumes escuros e grandes panos de vidro" fetchpriority="high">
+        <img class="hero__img" src="assets/img/casa-simulacao-noite.webp"
+             srcset="assets/img/casa-simulacao-noite-900.webp 900w, assets/img/casa-simulacao-noite.webp 1448w"
+             sizes="100vw" width="1448" height="1086" alt="Simulação de projeto: fachada de casa térrea com garagem iluminada à noite" fetchpriority="high">
         <div class="hero__shade"></div>
       </div>
 
@@ -185,6 +182,7 @@
         <span class="hero__scroll-txt">Role</span>
         <span class="hero__scroll-line"><i></i></span>
       </a>
+      <span class="hero__tag">Simulação de projeto</span>
       <div class="hero__meta fade-up">
         <span>[EVO]</span>
         <span>Transformação de espaços</span>
@@ -205,7 +203,7 @@
 
         <div class="about__grid">
           <figure class="about__fig about__fig--main reveal-img" data-cursor="EVO">
-            <div class="parallax"><img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1400&q=78" alt="Sala de estar com madeira escura, iluminação indireta e grandes aberturas" loading="lazy"></div>
+            <div class="parallax"><img src="assets/img/cozinha-planejada.webp" alt="Cozinha planejada com armários claros, bancada branca e janela ampla" loading="lazy"></div>
           </figure>
 
           <div class="about__copy">
@@ -215,7 +213,7 @@
           </div>
 
           <figure class="about__fig about__fig--small reveal-img">
-            <div class="parallax" data-speed="-12"><img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=900&q=75" alt="Estrutura em madeira de uma obra em andamento" loading="lazy"></div>
+            <div class="parallax" data-speed="-12"><img src="assets/img/estrutura-concreto.webp" alt="Parede de concreto de uma casa em obra, com escada de madeira" loading="lazy"></div>
             <figcaption>Detalhe construtivo</figcaption>
           </figure>
         </div>
@@ -253,7 +251,7 @@
         </div>
 
         <ul class="svc-list">
-          <li class="svc" data-img="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=75">
+          <li class="svc" data-img="assets/img/pergolado-simulacao.webp">
             <button class="svc__row" aria-expanded="false" data-cursor="Abrir">
               <span class="svc__n">01</span>
               <span class="svc__title"><span class="roll__inner" data-text="Arquitetura e projetos">Arquitetura e projetos</span></span>
@@ -262,12 +260,12 @@
             </button>
             <div class="svc__detail">
               <div class="svc__detail-inner">
-                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=70" alt="Desenho técnico de projeto arquitetônico" loading="lazy">
+                <img src="assets/img/pergolado-simulacao.webp" alt="Simulação de área gourmet com pergolado de madeira" loading="lazy">
                 <p>Estudos de layout, projeto arquitetônico e de interiores, detalhamento executivo e compatibilização. Desenhamos já pensando em como será construído.</p>
               </div>
             </div>
           </li>
-          <li class="svc" data-img="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=75">
+          <li class="svc" data-img="assets/img/apartamento-iluminacao.webp">
             <button class="svc__row" aria-expanded="false" data-cursor="Abrir">
               <span class="svc__n">02</span>
               <span class="svc__title"><span class="roll__inner" data-text="Reformas residenciais">Reformas residenciais</span></span>
@@ -276,7 +274,7 @@
             </button>
             <div class="svc__detail">
               <div class="svc__detail-inner">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=70" alt="Sala de estar reformada com madeira e tons neutros" loading="lazy">
+                <img src="assets/img/apartamento-iluminacao.webp" alt="Sala de apartamento com iluminação indireta no forro, durante a reforma" loading="lazy">
                 <p>Reformas completas ou pontuais, com gestão de condomínio, proteção do imóvel e cronograma pensado para a rotina de quem mora.</p>
               </div>
             </div>
@@ -295,7 +293,7 @@
               </div>
             </div>
           </li>
-          <li class="svc" data-img="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=75">
+          <li class="svc" data-img="assets/img/casa-reboco.webp">
             <button class="svc__row" aria-expanded="false" data-cursor="Abrir">
               <span class="svc__n">04</span>
               <span class="svc__title"><span class="roll__inner" data-text="Construção">Construção</span></span>
@@ -304,12 +302,12 @@
             </button>
             <div class="svc__detail">
               <div class="svc__detail-inner">
-                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=70" alt="Vista aérea de canteiro de obras" loading="lazy">
+                <img src="assets/img/casa-reboco.webp" alt="Casa térrea em construção, com paredes em reboco" loading="lazy">
                 <p>Obras novas e ampliações, da fundação ao acabamento, com controle de qualidade em cada etapa construtiva.</p>
               </div>
             </div>
           </li>
-          <li class="svc" data-img="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=75">
+          <li class="svc" data-img="assets/img/sala-integrada-obra.webp">
             <button class="svc__row" aria-expanded="false" data-cursor="Abrir">
               <span class="svc__n">05</span>
               <span class="svc__title"><span class="roll__inner" data-text="Gerenciamento de obras">Gerenciamento de obras</span></span>
@@ -318,7 +316,7 @@
             </button>
             <div class="svc__detail">
               <div class="svc__detail-inner">
-                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=70" alt="Profissional com capacete acompanhando a obra" loading="lazy">
+                <img src="assets/img/sala-integrada-obra.webp" alt="Sala integrada com porcelanato, em fase de acabamento" loading="lazy">
                 <p>Acompanhamento técnico, gestão de fornecedores, medições e relatórios periódicos — você sabe exatamente em que pé está a sua obra.</p>
               </div>
             </div>
@@ -336,84 +334,90 @@
             <span class="eyebrow">Projetos</span>
           </div>
           <div class="projects__title-row">
-            <h2 class="h2 split-words">Seleção <em>conceitual</em></h2>
+            <h2 class="h2 split-words">Obras e <em>projetos</em></h2>
             <div class="projects__counter" aria-hidden="true">
               <span class="projects__current">01</span><span class="projects__sep">/</span><span class="projects__total">06</span>
               <span class="projects__bar"><i></i></span>
             </div>
           </div>
-          <p class="projects__note">Imagens ilustrativas de referência. Os projetos exibidos são conceitos demonstrativos e não obras executadas pela EVO.</p>
+          <p class="projects__note">Registros fotográficos de obras e simulações de projeto. As imagens marcadas como simulação mostram a proposta, não a obra concluída.</p>
         </div>
 
         <div class="projects__track">
           <article class="proj proj--a" data-cursor="Ver" tabindex="0"
-            data-title="Casa Ébano" data-cat="Arquitetura & Construção"
-            data-desc="Volumes escuros, vidro do piso ao teto e uma integração total entre interior e jardim. Um conceito de residência que privilegia a luz do entardecer."
-            data-img="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=80">
-            <div class="proj__media"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1100&q=75" alt="Residência com fachada escura e madeira" loading="lazy"><span class="proj__loc">Projeto conceitual</span></div>
+            data-title="Casa térrea" data-cat="Construção"
+            data-desc="Fachada com volumes verticais e vidro, registrada durante a obra."
+            data-status="Registro de obra" data-source="Fotografia da obra"
+            data-img="assets/img/casa-fachada-obra.webp">
+            <div class="proj__media"><img src="assets/img/casa-fachada-obra.webp" alt="Fachada de casa térrea em obra" loading="lazy"><span class="proj__loc">Registro de obra</span></div>
             <div class="proj__info">
               <span class="proj__n">01</span>
-              <h3 class="proj__title">Casa Ébano</h3>
-              <span class="proj__cat">Arquitetura & Construção</span>
+              <h3 class="proj__title">Casa térrea</h3>
+              <span class="proj__cat">Construção</span>
             </div>
           </article>
 
           <article class="proj proj--b" data-cursor="Ver" tabindex="0"
-            data-title="Apartamento Linho" data-cat="Reforma residencial"
-            data-desc="Planta integrada, paleta neutra e marcenaria sob medida. Um conceito de reforma que amplia a sensação de espaço sem mexer na estrutura."
-            data-img="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=80">
-            <div class="proj__media"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=75" alt="Sala de estar minimalista com tons neutros" loading="lazy"><span class="proj__loc">Projeto conceitual</span></div>
+            data-title="Luz indireta" data-cat="Reforma residencial"
+            data-desc="Forro com iluminação indireta, registrado durante a reforma."
+            data-status="Registro de obra" data-source="Fotografia da obra"
+            data-img="assets/img/apartamento-iluminacao.webp">
+            <div class="proj__media"><img src="assets/img/apartamento-iluminacao.webp" alt="Sala de apartamento com sanca iluminada durante a reforma" loading="lazy"><span class="proj__loc">Registro de obra</span></div>
             <div class="proj__info">
               <span class="proj__n">02</span>
-              <h3 class="proj__title">Apartamento Linho</h3>
+              <h3 class="proj__title">Luz indireta</h3>
               <span class="proj__cat">Reforma residencial</span>
             </div>
           </article>
 
           <article class="proj proj--c" data-cursor="Ver" tabindex="0"
-            data-title="Escritório Grafite" data-cat="Reforma comercial"
-            data-desc="Ambiente corporativo com piso escuro, iluminação linear e estações flexíveis. Conceito pensado para execução em etapas, sem parar a operação."
-            data-img="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1800&q=80">
-            <div class="proj__media"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1100&q=75" alt="Escritório contemporâneo com estações de trabalho" loading="lazy"><span class="proj__loc">Projeto conceitual</span></div>
+            data-title="Casa térrea à noite" data-cat="Arquitetura"
+            data-desc="Estudo visual da fachada com iluminação de jardim, acesso e garagem."
+            data-status="Simulação de projeto" data-source="Imagem simulada"
+            data-img="assets/img/casa-simulacao-noite.webp">
+            <div class="proj__media"><img src="assets/img/casa-simulacao-noite.webp" alt="Simulação da fachada de uma casa térrea iluminada à noite" loading="lazy"><span class="proj__loc">Simulação de projeto</span></div>
             <div class="proj__info">
               <span class="proj__n">03</span>
-              <h3 class="proj__title">Escritório Grafite</h3>
-              <span class="proj__cat">Reforma comercial</span>
+              <h3 class="proj__title">Casa térrea à noite</h3>
+              <span class="proj__cat">Arquitetura</span>
             </div>
           </article>
 
           <article class="proj proj--d" data-cursor="Ver" tabindex="0"
-            data-title="Residência Horizonte" data-cat="Arquitetura & Construção"
-            data-desc="Linhas horizontais, beirais generosos e piscina alinhada ao eixo da casa. Um conceito de obra nova com foco em conforto térmico e vistas."
-            data-img="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1800&q=80">
-            <div class="proj__media"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=75" alt="Casa branca com piscina e linhas horizontais" loading="lazy"><span class="proj__loc">Projeto conceitual</span></div>
+            data-title="Área social integrada" data-cat="Construção"
+            data-desc="Ambiente integrado com porcelanato polido e portas de vidro voltadas para a área externa."
+            data-status="Registro de obra" data-source="Fotografia da obra"
+            data-img="assets/img/area-integrada-vidro.webp">
+            <div class="proj__media"><img src="assets/img/area-integrada-vidro.webp" alt="Área integrada em obra com portas de vidro" loading="lazy"><span class="proj__loc">Registro de obra</span></div>
             <div class="proj__info">
               <span class="proj__n">04</span>
-              <h3 class="proj__title">Residência Horizonte</h3>
-              <span class="proj__cat">Arquitetura & Construção</span>
+              <h3 class="proj__title">Área social integrada</h3>
+              <span class="proj__cat">Construção</span>
             </div>
           </article>
 
           <article class="proj proj--e" data-cursor="Ver" tabindex="0"
-            data-title="Loft Travertino" data-cat="Interiores"
-            data-desc="Pé-direito duplo, escada escultórica e materiais naturais. Conceito de interiores que valoriza a luz e a continuidade com a área externa."
-            data-img="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=1800&q=80">
-            <div class="proj__media"><img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=1100&q=75" alt="Interior com escada e vista para a piscina" loading="lazy"><span class="proj__loc">Projeto conceitual</span></div>
+            data-title="Área gourmet com pergolado" data-cat="Arquitetura"
+            data-desc="Estudo visual de uma área de convivência coberta por pergolado de madeira, com iluminação quente."
+            data-status="Simulação de projeto" data-source="Imagem simulada"
+            data-img="assets/img/pergolado-simulacao.webp">
+            <div class="proj__media"><img src="assets/img/pergolado-simulacao.webp" alt="Simulação de área gourmet com pergolado de madeira" loading="lazy"><span class="proj__loc">Simulação de projeto</span></div>
             <div class="proj__info">
               <span class="proj__n">05</span>
-              <h3 class="proj__title">Loft Travertino</h3>
-              <span class="proj__cat">Interiores</span>
+              <h3 class="proj__title">Área gourmet com pergolado</h3>
+              <span class="proj__cat">Arquitetura</span>
             </div>
           </article>
 
           <article class="proj proj--f" data-cursor="Ver" tabindex="0"
-            data-title="Banho Concreto" data-cat="Reforma residencial"
-            data-desc="Revestimentos contínuos, metais escuros e iluminação embutida. Um conceito de reforma de banheiro com estética mineral e manutenção simples."
-            data-img="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1800&q=80">
-            <div class="proj__media"><img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=75" alt="Banheiro contemporâneo com banheira e tons cinza" loading="lazy"><span class="proj__loc">Projeto conceitual</span></div>
+            data-title="Instalação de piso" data-cat="Reforma residencial"
+            data-desc="Etapa de assentamento do piso, vista da porta do cômodo."
+            data-status="Registro de obra" data-source="Fotografia da obra"
+            data-img="assets/img/piso-instalacao.webp">
+            <div class="proj__media"><img src="assets/img/piso-instalacao.webp" alt="Piso recém-assentado visto da porta do cômodo" loading="lazy"><span class="proj__loc">Registro de obra</span></div>
             <div class="proj__info">
               <span class="proj__n">06</span>
-              <h3 class="proj__title">Banho Concreto</h3>
+              <h3 class="proj__title">Instalação de piso</h3>
               <span class="proj__cat">Reforma residencial</span>
             </div>
           </article>
@@ -475,10 +479,10 @@
           </ol>
 
           <div class="process__media" aria-hidden="true">
-            <figure><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1100&q=75" alt="" loading="lazy"></figure>
-            <figure><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1100&q=75" alt="" loading="lazy"></figure>
-            <figure><img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1100&q=75" alt="" loading="lazy"></figure>
-            <figure><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=75" alt="" loading="lazy"></figure>
+            <figure><img src="assets/img/casa-reboco.webp" alt="" loading="lazy"></figure>
+            <figure><img src="assets/img/pergolado-simulacao.webp" alt="" loading="lazy" style="object-position: 62% 50%"><figcaption>Simulação de projeto</figcaption></figure>
+            <figure><img src="assets/img/execucao-pintura.webp" alt="" loading="lazy"></figure>
+            <figure><img src="assets/img/cozinha-janela.webp" alt="" loading="lazy"></figure>
           </div>
 
           <div class="process__progress" aria-hidden="true">
@@ -497,9 +501,9 @@
         </div>
         <h2 class="statement__text" aria-label="Construímos com precisão aquilo que foi pensado com cuidado.">
           <span class="st-line"><span class="st-w">Construímos</span></span>
-          <span class="st-line"><span class="st-w">com</span> <span class="st-pill" aria-hidden="true"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=70" alt=""></span> <span class="st-w"><em>precisão</em></span></span>
+          <span class="st-line"><span class="st-w">com</span> <span class="st-pill" aria-hidden="true"><img src="assets/img/casa-fachada-garagem.webp" alt=""></span> <span class="st-w"><em>precisão</em></span></span>
           <span class="st-line"><span class="st-w">aquilo</span> <span class="st-w">que</span> <span class="st-w">foi</span></span>
-          <span class="st-line"><span class="st-w">pensado</span> <span class="st-pill" aria-hidden="true"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=70" alt=""></span> <span class="st-w">com</span> <span class="st-w"><em>cuidado.</em></span></span>
+          <span class="st-line"><span class="st-w">pensado</span> <span class="st-pill" aria-hidden="true"><img src="assets/img/cozinha-planejada.webp" alt=""></span> <span class="st-w">com</span> <span class="st-w"><em>cuidado.</em></span></span>
         </h2>
       </div>
       <div class="marquee" aria-hidden="true">
@@ -513,7 +517,7 @@
     <!-- ========== 07 CONTATO ========== -->
     <section class="contact" id="contato" data-header="dark">
       <div class="contact__bg" aria-hidden="true">
-        <div class="parallax" data-speed="-18"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1800&q=75" alt="" loading="lazy"></div>
+        <div class="parallax" data-speed="-18"><img src="assets/img/sala-integrada-obra.webp" alt="" loading="lazy"></div>
       </div>
       <div class="container contact__inner">
         <div class="section-head">
@@ -644,8 +648,8 @@
         <h3 class="pov__title" id="pov-title"></h3>
         <p class="pov__desc"></p>
         <dl class="pov__meta">
-          <div><dt>Status</dt><dd>Projeto conceitual</dd></div>
-          <div><dt>Imagens</dt><dd>Referência ilustrativa</dd></div>
+          <div><dt>Status</dt><dd class="pov__status"></dd></div>
+          <div><dt>Imagens</dt><dd class="pov__source"></dd></div>
         </dl>
         <div class="pov__nav">
           <button class="pov__prev link-arrow" type="button" data-cursor="hide"><svg class="flip"><use href="#i-arrow"/></svg> Anterior</button>
